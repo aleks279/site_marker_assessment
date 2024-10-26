@@ -19,7 +19,7 @@ export default function useCreateReport(projectId?: number | string) {
             return response.json();
         },
         onSuccess: () => {
-            queryClient.invalidateQueries({ queryKey: ['reports', 'project', projectId] })
+            queryClient.invalidateQueries({ queryKey: ['reports', 'projects', projectId] })
         },
     })
 }
