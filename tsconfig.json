@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./app/javascript/app",
+        "paths": {
+            "@/*": [
+                "./*"
+            ]
+        },
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "skipLibCheck": true,
+        "jsx": "react",
+    }
+}
