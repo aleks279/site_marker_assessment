@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Button } from "@/ui/button"
 import { Input } from "@/ui/input"
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/ui/card"
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/ui/card"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/ui/dialog"
 import { Label } from "@/ui/label"
 import { Textarea } from "@/ui/textarea"
@@ -94,7 +94,7 @@ export default function Component() {
 
                 <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
                     {projects?.map?.((project: Project) => (
-                        <Card key={project.id} className="bg-gray-800 border-gray-700">
+                        <Card key={project.id} className="bg-gray-800 border-gray-700 h-[220px]">
                             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                                 <CardTitle className="text-white">{project.name}</CardTitle>
                                 <Button variant="link" size="icon" onClick={() => handleShareProject(project)}>
@@ -102,13 +102,15 @@ export default function Component() {
                                 </Button>
                             </CardHeader>
                             <CardContent>
-                                <CardDescription className="text-gray-400 mb-4">{project.description}</CardDescription>
+                                <CardDescription className="text-gray-400 mb-4 h-[40px]">{project.description}</CardDescription>
+                            </CardContent>
+                            <CardFooter className="flex justify-end">
                                 <Button asChild variant="outline" className="w-full hover:text-gray-700">
                                     <Link to={`/projects/${project.id}`}>
                                         View Project
                                     </Link>
                                 </Button>
-                            </CardContent>
+                            </CardFooter>
                         </Card>
                     ))}
                 </div>
