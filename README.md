@@ -8,12 +8,13 @@ This repository contains a Rails application designed to showcase your understan
 2. [The Assignment](#the-assignment)
 3. [Getting Started](#getting-started)
 5. [Delivery](#delivery)
+5. [Hints](#hints)
 
 ## Overview
 
 This is a rails app for managing generic `Projects`.\
 Users can create `projects` and add `reports`/`documents` to them.\
-Currently, **only the creator of a project is able to view the project and it's reports/documents**.
+Currently, **only the creator of a project is able to view the project and it's associated resources (reports/documents).**
 
 **We want the ability for users to share their created projects/reports/documents with other users.**\
 **We also want the ability to assign certain permissions when sharing - allow different levels of access.**
@@ -70,3 +71,12 @@ If you decided to include Technical Documentation of your changes please include
 Please spend no-more **2 hours on the assignment**.\
 
 ### Happing coding! Looking forward to see what you came up with :)
+
+## Hints
+
+We've provided some default users in the db seeds.
+If you want a user that has resources ready to share\
+You can login with
+
+email: `robertpaulson@example.com`
+password: `testing123`
