@@ -69,7 +69,7 @@ The permissions levels should resemble the following:
 
 When your changes are complete push your new branch and open Pull Request to `main` branch.\
 If you decided to include Technical Documentation of your changes please include a link in the PR description.\
-Please spend no-more **2 hours on the assignment**.\
+Please spend no-more **2 hours on the assignment**.
 
 ### Happing coding! Looking forward to see what you came up with :)
 
