@@ -38,11 +38,11 @@ Update this rails application with the necessary changes to allow creators of `P
 Users should also have the **ability to assign a permission level when sharing a resource.**\
 The permissions levels should resemble the following:
 - **Full Access**
-    - User can edit the resource and create/edit any subresources
+    - User can edit the resource and view/edit/create any subresources
 - **Edit**
-    - User can view and edit the resource and any subresources only, no ability to create.
+    - User can view and edit the resource and any subresources only, with no ability to create.
 - **View**
-    - User has view-only access to the resource and it's subresources.
+    - User has view-only access to the resource and its subresources.
 
 **Add the Model(s) and API(s) necessary to allow users to do the above and unit/integration test coverage around these changes.**
 
