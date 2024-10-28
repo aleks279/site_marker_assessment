@@ -29,7 +29,7 @@ Currently, **only the creator of a project is able to view the project and it's 
 
 ## The Assignment
 
-Update this project with the necessary changes to allow creators of `Project`s, `Report`s and `Document`s the ability to share their creations with other users.
+Update this rails application with the necessary changes to allow creators of `Project`s, `Report`s and `Document`s the ability to share their creations with other users.
 
 Users should also have the **ability to assign a permission level when sharing a resource.**\
 The permissions levels should resemble the following:
@@ -40,11 +40,12 @@ The permissions levels should resemble the following:
 - **View**
     - User has view-only access to the resource and it's subresources.
 
+**Add the Model(s) and API(s) necessary to allow users to do the above and unit/integration test coverage around these changes.**
+
 ### Extra credit
 
-- Update the front-end with UX for sharing a project/report/document with other users.
-- Add unit and integration test coverage to your PR around your changes.
 - Include Technical Documentation about your changes.
+- Update the front-end with UX for sharing a project/report/document with other users.
 
 ## Getting Started
 
