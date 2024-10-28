@@ -90,3 +90,13 @@ You can login with
 
 email: `robertpaulson@example.com`\
 password: `testing123`
+
+**AI/LLMs:**
+
+Did you use AI tools to help you with this assignment? 
+
+*GREAT!!!*
+
+It's a brave new world of software development and leveraging these tools are imperative.\
+Let us know which tools you used and how they helped you find a solution.\
+*P.S. This project is setup to support the use of https://v0.dev/ ;)*
