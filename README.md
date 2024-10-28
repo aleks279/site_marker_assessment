@@ -79,5 +79,5 @@ We've provided some default users in the db seeds.
 If you want a user that has resources ready to share\
 You can login with
 
-email: `robertpaulson@example.com`
+email: `robertpaulson@example.com`\
 password: `testing123`
