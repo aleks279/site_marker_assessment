@@ -27,8 +27,8 @@ Currently, **only the creator of a project is able to view the project and it's 
         - [tailwindcss](https://tailwindcss.com/) - css
         - [shadcn](https://ui.shadcn.com/) - ui components
      
-* Application *
-  Check out this loom demo of the current state of the application\
+* Application
+  * Check out this loom demo of the current state of the application\
   https://www.loom.com/embed/a5b1adec883d477481f6f6640f904ad1?sid=95aa56b7-79a4-4ead-adda-b1300fde0153
 
 ## The Assignment
