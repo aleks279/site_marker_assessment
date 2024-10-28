@@ -46,6 +46,7 @@ The permissions levels should resemble the following:
 
 - Include Technical Documentation about your changes.
 - Update the front-end with UX for sharing a project/report/document with other users.
+- Refactor! No application is perfect and this one is no exception. Refactors welcome, leave comments so we know why.
 
 ## Getting Started
 
