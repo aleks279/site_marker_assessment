@@ -17,7 +17,7 @@ Users can create `projects` and add `reports`/`documents` to them.\
 Currently, **only the creator of a project is able to view the project and it's associated resources (reports/documents).**
 
 **We want the ability for users to share their created projects/reports/documents with other users.**\
-**We also want the ability to assign certain permissions when sharing - allow different levels of access.**
+**We also want the ability to assign certain permissions when sharing - allow different levels of access to each individual resource.**
 
 * **Tech Stack:**
     * Ruby on Rails 
