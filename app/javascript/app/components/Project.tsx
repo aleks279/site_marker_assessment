@@ -86,9 +86,10 @@ export default function Component() {
                 isOpen={isShareDialogOpen}
                 onClose={() => setIsShareDialogOpen(false)}
                 handleUpdateUserPermission={function (userId: number, permission: 'full access' | 'edit' | 'view'): void {
-                    throw new Error('Function not implemented.')
-                }} handleAddUser={function (): void {
-                    throw new Error('Function not implemented.')
+                    alert('Function not implemented.')
+                }}
+                handleAddUser={function (): void {
+                    alert('Function not implemented.')
                 }}
             />
         </Layout>
