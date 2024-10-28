@@ -4,7 +4,6 @@ class ApiController < ApplicationController
     private
 
     def render_root_unless_json
-        puts "REQUEST FORMAT #{request.format.json?}"
         return render 'home/index' unless request.format.json?
     end
 end

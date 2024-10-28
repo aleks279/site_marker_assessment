@@ -64,6 +64,10 @@ The permissions levels should resemble the following:
 3. **Code:**
     Local application should be live at http://localhost:5000 - time to code!
 
+4. **Run tests:**
+   ```bash
+   rspec
+   ```
 
 ## Delivery
 

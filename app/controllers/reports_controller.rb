@@ -63,7 +63,7 @@ class ReportsController < ApiController
   private
 
     def set_project
-      @project = Project.find(params[:project_id]) if params[:project_id]
+      @project = current_user.created_projects.find(params[:project_id]) if params[:project_id]
     end
 
     # Use callbacks to share common setup or constraints between actions.
