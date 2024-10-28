@@ -5,13 +5,11 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter }
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/ui/dialog"
 import { Label } from "@/ui/label"
 import { Textarea } from "@/ui/textarea"
-import { Plus, LogOut, Share2, Loader2 } from "lucide-react"
-import { signOut } from '@/lib/utils'
+import { Plus, Share2, Loader2 } from "lucide-react"
 import { Link } from 'react-router-dom'
-import { Project, User } from '@/models'
+import { Project } from '@/models'
 import useFetchProjects from '@/api/useFetchProjects'
 import useCreateProject from '@/api/useCreateProject'
-import Icon from '@/components/shared/Icon'
 import useFetchUsers from '@/api/useFetchUsers'
 import ShareDialog from './shared/ShareDialog'
 import Header from './shared/Header'
