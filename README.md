@@ -59,17 +59,21 @@ The permissions levels should resemble the following:
    git clone https://github.com/Site-Marker/sharing-refactor.git
    cd sharing-refactor
    ```
+2. **Checkout a new branch:**
+   ```bash
+   git checkout -b [your first name]/take-home-assessment
+   ```
 
-2. **Setup enviroment:**
+3. **Setup enviroment:**
    ```bash
    bin/setup
    bin/dev
    ```
 
-3. **Code:**
+4. **Code:**
     Local application should be live at http://localhost:5000 - time to code!
 
-4. **Run tests:**
+5. **Run tests:**
    ```bash
    rspec
    ```
