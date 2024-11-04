@@ -5,7 +5,13 @@ require 'rails_helper'
 
 describe ProjectsController, type: :request do
 
-    let(:user) { create(:user) }
+    let!(:user) do
+        user = create(:user)
+        role = create(:role, :full_access)
+        user.roles << role
+        user.save
+        user
+    end
     
     before do
         sign_in(user) if user

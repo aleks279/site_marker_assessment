@@ -6,6 +6,7 @@ class ReportsController < ApiController
   # GET /reports or /reports.json
   def index
     @reports = @project ? @project.reports : current_user.created_reports.all
+    authorize @reports
   end
 
   # GET /reports/1 or /reports/1.json
@@ -26,6 +27,8 @@ class ReportsController < ApiController
     @report = @project ? @project.reports.build(report_params) : current_user.created_reports.build(report_params)
     @report.user = current_user if @project
 
+    authorize @report
+
     respond_to do |format|
       if @report.save
         format.html { redirect_to @report, notice: "Report was successfully created." }
@@ -40,6 +43,8 @@ class ReportsController < ApiController
   # PATCH/PUT /reports/1 or /reports/1.json
   def update
     respond_to do |format|
+      authorize @report
+
       if @report.update(report_params)
         format.html { redirect_to @report, notice: "Report was successfully updated." }
         format.json { render :show, status: :ok, location: @report }
@@ -52,6 +57,8 @@ class ReportsController < ApiController
 
   # DELETE /reports/1 or /reports/1.json
   def destroy
+    authorize @report
+
     @report.destroy!
 
     respond_to do |format|
