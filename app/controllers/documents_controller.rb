@@ -6,6 +6,7 @@ class DocumentsController < ApiController
   # GET /documents or /documents.json
   def index
     @documents = @project ? @project.documents : current_user.created_documents.all
+    authorize @documents
   end
 
   # GET /documents/1 or /documents/1.json
@@ -26,6 +27,8 @@ class DocumentsController < ApiController
     @document = @project ? @project.documents.build(document_params) : current_user.created_documents.build(document_params)
     @document.user = current_user if @project
 
+    authorize @document
+
     respond_to do |format|
       if @document.save
         format.html { redirect_to @document, notice: "Document was successfully created." }
@@ -40,6 +43,8 @@ class DocumentsController < ApiController
   # PATCH/PUT /documents/1 or /documents/1.json
   def update
     respond_to do |format|
+      authorize @document
+
       if @document.update(document_params)
         format.html { redirect_to @document, notice: "Document was successfully updated." }
         format.json { render :show, status: :ok, location: @document }
@@ -52,6 +57,8 @@ class DocumentsController < ApiController
 
   # DELETE /documents/1 or /documents/1.json
   def destroy
+    authorize @document
+
     @document.destroy!
 
     respond_to do |format|

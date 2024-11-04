@@ -5,6 +5,7 @@ class ProjectsController < ApiController
   # GET /projects or /projects.json
   def index
     @projects = current_user.created_projects.all
+    authorize @projects
   end
 
   # GET /projects/1 or /projects/1.json
@@ -24,6 +25,8 @@ class ProjectsController < ApiController
   def create
     @project = current_user.created_projects.build(project_params)
 
+    authorize @project
+
     respond_to do |format|
       if @project.save
         format.html { redirect_to @project, notice: "Project was successfully created." }
@@ -38,6 +41,8 @@ class ProjectsController < ApiController
   # PATCH/PUT /projects/1 or /projects/1.json
   def update
     respond_to do |format|
+      authorize @project
+
       if @project.update(project_params)
         format.html { redirect_to @project, notice: "Project was successfully updated." }
         format.json { render :show, status: :ok, location: @project }
@@ -50,6 +55,8 @@ class ProjectsController < ApiController
 
   # DELETE /projects/1 or /projects/1.json
   def destroy
+    authorize @project
+
     @project.destroy!
 
     respond_to do |format|
